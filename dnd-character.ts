@@ -16,7 +16,7 @@ export class DnDCharacter {
     this.intelligence = DnDCharacter.generateAbilityScore();
     this.wisdom = DnDCharacter.generateAbilityScore();
     this.charisma = DnDCharacter.generateAbilityScore();
-    this.hitpoints = (10 + );
+    this.hitpoints = DnDCharacter.getModifierFor(this.constitution) + 10;
   }
 
   static get randomNumberGenerator() {
